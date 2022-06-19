@@ -1,0 +1,16 @@
+version: '3'
+services:
+  cache:
+    image: redis
+    restart: always
+    container_name: test-redis
+    ports:
+      - 6379:6379
+  redis-browser:
+    build: ./
+    restart: always
+    command: --url redis://redis:6379
+    links:
+      - cache:redis
+    ports:
+      - 4567:4567
