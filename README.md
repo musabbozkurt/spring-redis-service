@@ -2,12 +2,9 @@
 <details open="open">
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
   <ol>
-    <li>
-      <a href="#summary">Summary</a>
-    </li>
-    <li>
-      <a href="#Prerequisites">Prerequisites and Installation</a>
-    </li>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#Prerequisites">Prerequisites and Installation</a></li>
+    <li><a href="#Redis">Redis Commands</a></li>
     <li><a href="#References">Reference Documentation</a></li>
     <li><a href="#Guides">Guides</a></li>
   </ol>
@@ -37,6 +34,25 @@ This project is created for multiple purposes;
    * Manual Installation 
      * [How to Install Redis](https://redis.io/docs/getting-started/)
 
+### Redis
+
+* The following command returns all matched data by 'keyPattern:*' pattern
+    * redis-cli --scan --pattern 'keyPattern:*'
+
+* The following command deletes all matched data by 'keyPattern:*' pattern
+    * redis-cli KEYS 'keyPattern:*' | xargs redis-cli DEL
+
+* The following command finds TYPE in redis with KEY
+    * TYPE key -> TYPE xxx:hashedIdOrSomethingElse
+
+* The following commands search by TYPE
+
+    * for "string" TYPE : get key
+    * for "hash" TYPE : hgetall key
+    * for "list" TYPE : lrange key 0 -1
+    * for "set" TYPE : smembers key
+    * for "zset" TYPE : zrange key 0 -1 withScores
+
 ### References
 
 For further reference, please consider the following sections:
@@ -55,4 +71,3 @@ The following guides illustrate how to use some features concretely:
 
 * [Messaging with Redis](https://spring.io/guides/gs/messaging-redis/)
 * [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
-
