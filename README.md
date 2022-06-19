@@ -34,6 +34,8 @@ This project is created for multiple purposes;
 
 For further reference, please consider the following sections:
 
+* [Redis Commands](https://auth0.com/blog/introduction-to-redis-install-cli-commands-and-data-types/)
+
 * [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
 * [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.7.0/maven-plugin/reference/html/)
 * [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.7.0/maven-plugin/reference/html/#build-image)
