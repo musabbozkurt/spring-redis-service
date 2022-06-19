@@ -13,7 +13,7 @@
 
 <!-- SUMMARY -->
 
-## Summary
+### Summary
 
 This project is created for multiple purposes;
 
@@ -23,7 +23,7 @@ This project is created for multiple purposes;
 
 <!-- Prerequisites and Installation -->
 
-## Prerequisites
+### Prerequisites
 
 * Java 17 should be installed.
 * Redis should be installed. There 2 options to install redis
