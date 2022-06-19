@@ -32,7 +32,7 @@ This project is created for multiple purposes;
 * Redis should be installed. There 2 options to install redis
    * Install with Docker 
      * [How to Install Docker](https://docs.docker.com/get-docker/)
-     * Run the following command command in the docker-compose.yml directory 
+     * After Docker is installed, run the following command in the docker-compose.yml file directory 
        to install Redis -> docker-compose up -d
    * Manual Installation 
      * [How to Install Redis](https://redis.io/docs/getting-started/)
