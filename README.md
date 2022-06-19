@@ -28,7 +28,14 @@ This project is created for multiple purposes;
 
 ## Prerequisites
 
-* Java 17 should be installed
+* Java 17 should be installed.
+* Redis should be installed. There 2 options to install redis
+   * Install with Docker 
+     * [How to Install Docker](https://docs.docker.com/get-docker/)
+     * Run the following command command in the docker-compose.yml directory 
+       to install Redis -> docker-compose up -d
+   * Manual Installation 
+     * [How to Install Redis](https://redis.io/docs/getting-started/)
 
 ### References
 
