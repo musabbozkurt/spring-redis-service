@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: spring-redis-service
+
+  # http://localhost:8080/h2-console
+  h2:
+    console:
+      enabled: true
+
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+
+  redis:
+    host: ${REDIS_URL:localhost}
+    port: 6379
+    jedis:
+      pool:
+        max-active: 7
+        max-idle: 7
+        min-idle: 2
+        max-wait: -1ms
+
+redisson:
+  enabled: true
+  url: redis://${REDIS_URL:localhost}:6379
+
+services:
+  token:
+    store: redis
